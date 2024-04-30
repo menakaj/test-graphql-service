@@ -1,0 +1,15 @@
+apiVersion: core.choreo.dev/v1alpha1
+kind: ComponentConfig
+metadata:
+  name: Test GraphQL
+  projectName: GraphQL
+  annotations:
+    componentType: Service
+spec:
+  build:
+    branch: main
+  inbound:
+    - name: TestGraphQL
+      port: 8080
+      type: GraphQL
+      visibility: Project
