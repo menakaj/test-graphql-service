@@ -13,3 +13,4 @@ spec:
       port: 8080
       type: GraphQL
       visibility: Public
+      schemaFilePath: graph/schema.graphqls
